@@ -1,0 +1,12 @@
+﻿services:
+  phonebooknet:
+    image: phonebooknet
+    build:
+      context: .
+      dockerfile: PhoneBookNet/Dockerfile
+
+  databaseaccess:
+    image: databaseaccess
+    build:
+      context: .
+      dockerfile: DatabaseAccess/Dockerfile
