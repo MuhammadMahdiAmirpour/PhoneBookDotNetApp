@@ -35,7 +35,7 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options => {
 	.AddEntityFrameworkStores<PhoneBookDbContext>()
 	.AddDefaultTokenProviders();
 
-builder.Services.AddSingleton<IContactRepository, ContactRepository>();
+builder.Services.AddScoped<IContactRepository, ContactRepository>();
 
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
